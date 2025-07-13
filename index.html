@@ -4,16 +4,52 @@
   <meta charset="UTF-8">
   <title>Revolut Alpha Prototype</title>
   <style>
-    body { font-family: Arial; padding: 20px; background: #f0f0f0; }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f0f0f0; }
     h1 { color: #0051ff; }
-    .card { background: white; padding: 20px; border-radius: 8px; margin-top: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
-    button { padding: 10px 20px; background: #0051ff; color: white; border: none; border-radius: 5px; cursor: pointer;}
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #0051ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #003ecc;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Revolut Alpha Prototype</h1>
+  <h1>Revolut Alpha Prototype</h1>
+
   <div class="card">
     <h2>Quick Transfer</h2>
+    <label for="accountName">Account Name</label>
+    <input type="text" id="accountName" placeholder="Enter recipient name">
+
+    <label for="accountNumber">Account Number</label>
+    <input type="text" id="accountNumber" placeholder="Enter account number">
+
     <p>Send money instantly to your contacts.</p>
     <button>Send €100</button>
   </div>
